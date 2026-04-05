@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkuuuEL.Portfolio</title>
+    <meta name="description"
+        content="Explore my high-performance, futuristic portfolio with GSAP animations, parallax effects, and smooth interactions.">
+
+    <!-- Google Fonts: Orbitron & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="#">Akuuu<span>EL</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active" data-text="HOME">Home</a></li>
+                <li><a href="#skills" class="nav-link" data-text="SKILLS">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-text="PROJECTS">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-text="CONNECT">Connect</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay">
+        <a href="#hero" class="mobile-link" data-text="HOME">Home</a>
+        <a href="#skills" class="mobile-link" data-text="SKILLS">Skills</a>
+        <a href="#projects" class="mobile-link" data-text="PROJECTS">Projects</a>
+        <a href="#contact" class="mobile-link" data-text="CONNECT">Connect</a>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="glitch-bg"></div>
+        <div class="hero-content container">
+            <div class="hero-text">
+                <h2 class="sub-title">Hi, I'm</h2>
+                <div class="title-area">
+                    <h1 class="main-title bin-reveal" data-text="VIBE CODER"
+                        data-titles='["Gojek Driver","VIBE CODER", "WEB DEVELOPER", "UI/UX DESIGNER", "GRAPHIC DESIGN", "MOTION GRAPHIC"]'>
+                        VIBE CODER</h1>
+                </div>
+                <p class="hero-description">Transforming complex ideas into seamless digital experiences with
+                    cutting-edge technology and modern design.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Hire Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-parallax-wrapper">
+                    <div class="profile-frame">
+                        <img src="assets/img/profile.JPEG" alt="Profile Photo" class="profile-img">
+                        <div class="profile-glow"></div>
+                    </div>
+                    <!-- Social CTA Badges -->
+                    <a href="https://instagram.com/anda" target="_blank" class="social-badge badge-ig">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>INSTAGRAM</span>
+                    </a>
+                    <a href="https://github.com/anda" target="_blank" class="social-badge badge-gh">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GITHUB</span>
+                    </a>
+                    <div class="profile-lines"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section id="skills" class="skill-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header">
+                    <h2 class="section-title">TECHNICAL TOOLKIT</h2>
+                    <p class="section-desc">Mastering digital excellence through a clinical, high-tech approach.</p>
+                </div>
+
+                <div class="dual-skills-grid">
+                    <!-- Sisi Kiri: Software -->
+                    <div class="skills-column software-column">
+                        <h3 class="column-title">SOFTWARE</h3>
+                        <div class="items-grid">
+                            <div class="skill-item affinity"><i class="fa-solid fa-pen-nib"></i> <span>Affinity</span>
+                            </div>
+                            <div class="skill-item canva"><i class="fa-solid fa-paintbrush"></i> <span>Canva</span>
+                            </div>
+                            <div class="skill-item pixellab"><i class="fa-solid fa-image"></i> <span>PixelLab</span>
+                            </div>
+                            <div class="skill-item figma"><i class="fa-brands fa-figma"></i> <span>Figma</span></div>
+                            <div class="skill-item corel"><i class="fa-solid fa-bezier-curve"></i> <span>Corel
+                                    Draw</span></div>
+                            <div class="skill-item sketchup"><i class="fa-solid fa-cube"></i> <span>SketchUp</span>
+                            </div>
+                            <div class="skill-item antigravity"><i class="fa-solid fa-microchip"></i>
+                                <span>Antigravity</span></div>
+                            <div class="skill-item chatgpt"><i class="fa-solid fa-comment-dots"></i> <span>Chat
+                                    GPT</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Sisi Kanan: Tech Stack -->
+                    <div class="skills-column tech-column">
+                        <h3 class="column-title">TECH STACK</h3>
+                        <div class="items-grid">
+                            <div class="skill-item html"><i class="fa-brands fa-html5"></i> <span>HTML</span></div>
+                            <div class="skill-item css"><i class="fa-brands fa-css3-alt"></i> <span>CSS</span></div>
+                            <div class="skill-item js"><i class="fa-brands fa-js"></i> <span>Javascript</span></div>
+                            <div class="skill-item laravel"><i class="fa-brands fa-laravel"></i> <span>Laravel</span>
+                            </div>
+                            <div class="skill-item react"><i class="fa-brands fa-react"></i> <span>React</span></div>
+                            <div class="skill-item dart"><i class="fa-solid fa-bullseye"></i> <span>Dart</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- What I Do -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">WHAT I <span>DO</span></h2>
+                <p class="section-desc">Three roles. One vision. Built to make an impact.</p>
+            </div>
+
+            <div class="role-panels">
+
+                <!-- Panel 1: Web Developer -->
+                <div class="role-panel" data-accent="#00f2ff">
+                    <div class="rp-fill"></div>
+                    <div class="rp-num">01</div>
+                    <div class="rp-line"></div>
+
+                    <div class="rp-inner">
+                        <!-- FRONT -->
+                        <div class="rp-front">
+                            <div class="rp-content">
+                                <div class="rp-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <h3 class="rp-title">WEB<br>DEVELOPER</h3>
+                                <p class="rp-desc">Building fast, scalable, and visually striking web experiences using
+                                    modern frameworks and clean code.</p>
+                                <div class="rp-tags">
+                                    <span>Laravel</span>
+                                    <span>React</span>
+                                    <span>JavaScript</span>
+                                    <span>HTML / CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BACK -->
+                        <div class="rp-back">
+                            <div class="rp-content back-content">
+                                <h3 class="rp-title">THE<br>EXPERTISE</h3>
+                                <p class="rp-desc">Specialized in full-stack SPA development. Extensive experience
+                                    mapping backend logic into seamless interfaces.</p>
+                                <ul class="rp-list">
+                                    <li><i class="fa-solid fa-check"></i> Clean Architecture</li>
+                                    <li><i class="fa-solid fa-check"></i> RESTful API Design</li>
+                                    <li><i class="fa-solid fa-check"></i> Performance Ops</li>
+                                </ul>
+                                <a href="#projects" class="rp-btn">View Projects <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Panel 2: Gojek Driver -->
+                <div class="role-panel" data-accent="#00e64d">
+                    <div class="rp-fill"></div>
+                    <div class="rp-num">02</div>
+                    <div class="rp-line"></div>
+
+                    <div class="rp-inner">
+                        <div class="rp-front">
+                            <div class="rp-content">
+                                <div class="rp-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                                <h3 class="rp-title">GOJEK<br>DRIVER</h3>
+                                <p class="rp-desc">On-demand delivery with street-level precision, zero-margin timing,
+                                    and a relentless service mentality.</p>
+                                <div class="rp-tags">
+                                    <span>Navigation</span>
+                                    <span>Reliability</span>
+                                    <span>Speed</span>
+                                    <span>Service</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rp-back">
+                            <div class="rp-content back-content">
+                                <h3 class="rp-title">THE<br>GRIND</h3>
+                                <p class="rp-desc">10,000+ completed orders. Mastering logistics, mapping the fastest
+                                    routes, and solving real-world challenges.</p>
+                                <ul class="rp-list">
+                                    <li><i class="fa-solid fa-check"></i> 4.9+ Star Rating</li>
+                                    <li><i class="fa-solid fa-check"></i> Time Optimization</li>
+                                    <li><i class="fa-solid fa-check"></i> Crisis Handling</li>
+                                </ul>
+                                <a href="#contact" class="rp-btn">View Stats <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: Graphic Designer -->
+                <div class="role-panel" data-accent="#bf00ff">
+                    <div class="rp-fill"></div>
+                    <div class="rp-num">03</div>
+                    <div class="rp-line"></div>
+
+                    <div class="rp-inner">
+                        <div class="rp-front">
+                            <div class="rp-content">
+                                <div class="rp-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                                <h3 class="rp-title">GRAPHIC<br>DESIGNER</h3>
+                                <p class="rp-desc">Crafting bold visual identities, layouts, and brand assets that
+                                    communicate before words do.</p>
+                                <div class="rp-tags">
+                                    <span>Figma</span>
+                                    <span>Canva</span>
+                                    <span>Branding</span>
+                                    <span>Typography</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rp-back">
+                            <div class="rp-content back-content">
+                                <h3 class="rp-title">THE<br>VISION</h3>
+                                <p class="rp-desc">Transforming abstract concepts into visual masterpieces. Expertise in
+                                    UI mockups, vector art, and brand kits.</p>
+                                <ul class="rp-list">
+                                    <li><i class="fa-solid fa-check"></i> High-Fi Prototypes</li>
+                                    <li><i class="fa-solid fa-check"></i> Minimalist Aesthetics</li>
+                                    <li><i class="fa-solid fa-check"></i> Vector Precision</li>
+                                </ul>
+                                <a href="#projects" class="rp-btn">View Gallery <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Get in Touch -->
+    <section id="contact" class="contact-section">
+        <div class="contact-glow glow-1"></div>
+        <div class="contact-glow glow-2"></div>
+        <div class="container">
+            <div class="contact-wrapper glass-panel">
+                <div class="contact-info">
+                    <h2 class="section-title">READY TO COLLABORATE?</h2>
+                    <p>Have a project in mind or just want to say hi? Let's connect and build something extraordinary
+                        together.</p>
+                    <ul class="contact-details">
+                        <li><i class="fa-solid fa-envelope"></i> hello@futurist.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Metaverse, Digital Space</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="glass-form-enhanced">
+                        <div class="form-group gs-reveal">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group gs-reveal">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group gs-reveal">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width contact-btn">Send Message <i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Akuuu<span>EL</span></div>
+                <p>&copy; 2026 DIGITAL ARCHITECT. ALL SYSTEMS OPERATIONAL.</p>
+                <div class="footer-scroll-top">
+                    <a href="#hero"><i class="fa-solid fa-chevron-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
